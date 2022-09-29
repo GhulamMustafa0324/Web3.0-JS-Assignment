@@ -1,0 +1,1 @@
+console.log(`Marilyn Monroe once said, "The nicest thing for me is sleep, then at least I can dream."`)
