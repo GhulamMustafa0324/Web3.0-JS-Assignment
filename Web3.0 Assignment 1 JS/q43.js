@@ -1,19 +1,15 @@
 let magicians = ["Ghulam Mustafa", "Sameer", "sami", "puff"];
 
-function show_magicians(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
+let show_magicians = (magicians) =>
+  magicians.map((eachMagician) => console.log(`${eachMagician} is a good magician`));
+
+function make_great([...magicians]) {
+  for (let i = 0; i < magicians.length; i++) {
+    magicians[i] = `The great ${magicians[i]}`;
   }
+  return magicians;
 }
 
-function make_great(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = `The great ${arr[i]}`;
-  }
-  return arr;
-}
 
-let greatMagicians = make_great([...magicians]);
-
+make_great(magicians);
 show_magicians(magicians);
-show_magicians(greatMagicians);
